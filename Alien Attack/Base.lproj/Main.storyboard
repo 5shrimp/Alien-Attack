@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="space.png" translatesAutoresizingMaskIntoConstraints="NO" id="qds-Iz-PgW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Alien Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqV-DS-7e4">
+                                <rect key="frame" x="20" y="192" width="280" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="1" green="0.1344871332" blue="0.066541034760000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC1-iP-9hx">
+                                <rect key="frame" x="20" y="280" width="280" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="- Play -">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.094794594499999996" green="1" blue="0.52008610590000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fry-n2-HBm" kind="modal" id="u7E-0Q-Scj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5$shrimp_logo.png" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9j0-e0-i6q">
+                                <rect key="frame" x="140" y="455" width="42" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="NlR-8l-zja"/>
+                                    <constraint firstAttribute="width" constant="42" id="pFV-vd-OXc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 5shrimp, 2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7u-ki-adB">
+                                <rect key="frame" x="106" y="493" width="109" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="2BM-m5-qIW"/>
+                                    <constraint firstAttribute="height" constant="21" id="V8c-to-7Bd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="1" green="0.84307898150000005" blue="0.32620350869999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.91887027519999998" green="1" blue="0.020336940229999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="M7u-ki-adB" secondAttribute="bottom" constant="54" id="1it-z6-Zih"/>
+                            <constraint firstItem="M7u-ki-adB" firstAttribute="top" secondItem="9j0-e0-i6q" secondAttribute="bottom" constant="4" id="6ep-78-8cC"/>
+                            <constraint firstItem="M7u-ki-adB" firstAttribute="centerX" secondItem="qds-Iz-PgW" secondAttribute="centerX" id="CHO-bR-nd9"/>
+                            <constraint firstItem="9j0-e0-i6q" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="140" id="K63-4a-h3T"/>
+                            <constraint firstItem="M7u-ki-adB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="SZu-2T-gve"/>
+                            <constraint firstItem="M7u-ki-adB" firstAttribute="centerX" secondItem="dqV-DS-7e4" secondAttribute="centerX" id="VyM-Ue-xPO"/>
+                            <constraint firstItem="M7u-ki-adB" firstAttribute="centerX" secondItem="yC1-iP-9hx" secondAttribute="centerX" id="m7J-lH-0CJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Main Logic-->
+        <scene sceneID="fGf-2O-VeR">
+            <objects>
+                <viewController id="fry-n2-HBm" customClass="MainLogic" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S3J-pR-tBH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xh8-WQ-Nb1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IUs-Wk-saH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stars.png" translatesAutoresizingMaskIntoConstraints="NO" id="ncu-aL-yBS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xq-5m-g2h">
+                                <rect key="frame" x="54" y="294" width="217" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Start!">
+                                    <color key="titleColor" red="1" green="0.27197521868962482" blue="0.053720018194710617" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.27197521870000002" blue="0.053720018190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="fry-n2-HBm" eventType="touchUpInside" id="FVd-WY-z26"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pk-wB-gYz">
+                                <rect key="frame" x="54" y="337" width="217" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Quit ">
+                                    <color key="titleColor" red="1" green="0.47981441180000001" blue="0.56036615050000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.47981441181360274" blue="0.56036615051001393" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="HUg-n4-8DN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSI-pK-DzS">
+                                <rect key="frame" x="141" y="432" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fire!">
+                                    <color key="titleColor" red="1" green="0.1344871332" blue="0.066541034760000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fire:" destination="fry-n2-HBm" eventType="touchUpInside" id="ADe-nT-Nwp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gun.png" translatesAutoresizingMaskIntoConstraints="NO" id="EuW-bn-9qL">
+                                <rect key="frame" x="127" y="504" width="67" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gunBeam.png" translatesAutoresizingMaskIntoConstraints="NO" id="89v-pw-k9N">
+                                <rect key="frame" x="295" y="547" width="5" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alphaAlien.png" translatesAutoresizingMaskIntoConstraints="NO" id="S1D-hh-HOh">
+                                <rect key="frame" x="20" y="48" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alphaAlien.png" translatesAutoresizingMaskIntoConstraints="NO" id="aQb-jL-Sej">
+                                <rect key="frame" x="255" y="48" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alphaAlien.png" translatesAutoresizingMaskIntoConstraints="NO" id="rEE-mi-ZEl">
+                                <rect key="frame" x="20" y="114" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alphaAlien.png" translatesAutoresizingMaskIntoConstraints="NO" id="hLA-mf-zme">
+                                <rect key="frame" x="255" y="114" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alphaAlien.png" translatesAutoresizingMaskIntoConstraints="NO" id="Emo-Y4-utt">
+                                <rect key="frame" x="99" y="48" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alphaAlien.png" translatesAutoresizingMaskIntoConstraints="NO" id="P7o-9W-wFV">
+                                <rect key="frame" x="99" y="114" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alphaAlien.png" translatesAutoresizingMaskIntoConstraints="NO" id="lul-Xq-f16">
+                                <rect key="frame" x="178" y="48" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alphaAlien.png" translatesAutoresizingMaskIntoConstraints="NO" id="yov-vr-84m">
+                                <rect key="frame" x="178" y="114" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alienBeam.png" translatesAutoresizingMaskIntoConstraints="NO" id="7oJ-72-VOq">
+                                <rect key="frame" x="20" y="20" width="8" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alienBeam.png" translatesAutoresizingMaskIntoConstraints="NO" id="ShC-gF-TC2">
+                                <rect key="frame" x="36" y="20" width="8" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alienBeam.png" translatesAutoresizingMaskIntoConstraints="NO" id="G4e-3c-hbF">
+                                <rect key="frame" x="54" y="20" width="8" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You lose!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42g-oS-jQX">
+                                <rect key="frame" x="48" y="218" width="217" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alienBeam.png" translatesAutoresizingMaskIntoConstraints="NO" id="Umx-C5-LGp">
+                                <rect key="frame" x="70" y="20" width="8" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alienBeam.png" translatesAutoresizingMaskIntoConstraints="NO" id="mkM-Ir-OiB">
+                                <rect key="frame" x="86" y="20" width="8" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alienBeam.png" translatesAutoresizingMaskIntoConstraints="NO" id="XuU-wi-SMs">
+                                <rect key="frame" x="102" y="20" width="8" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alienBeam.png" translatesAutoresizingMaskIntoConstraints="NO" id="j8Q-ey-oOp">
+                                <rect key="frame" x="118" y="20" width="8" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alienBeam.png" translatesAutoresizingMaskIntoConstraints="NO" id="EZb-gY-L8v">
+                                <rect key="frame" x="134" y="20" width="8" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="But you've killed x aliens! Good job." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KR8-bo-UAm">
+                                <rect key="frame" x="20" y="265" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.84307898150000005" blue="0.32620350869999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="1" green="0.3622037059892198" blue="0.13288625224589812" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to move - touch the left or right screen side" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4a-CT-sjS">
+                                <rect key="frame" x="30" y="201" width="265" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to shoot - press &quot;Fire!&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbX-hs-rHp">
+                                <rect key="frame" x="88" y="172" width="145" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="fire" destination="QSI-pK-DzS" id="wwK-XY-tD0"/>
+                        <outlet property="frags" destination="KR8-bo-UAm" id="a9P-Cw-7tu"/>
+                        <outlet property="gameResult" destination="42g-oS-jQX" id="g9G-L0-W0F"/>
+                        <outlet property="gun" destination="EuW-bn-9qL" id="beq-FD-KJX"/>
+                        <outlet property="gunBeam" destination="89v-pw-k9N" id="kxa-jM-nSo"/>
+                        <outlet property="quit" destination="6pk-wB-gYz" id="mcl-xR-Dpd"/>
+                        <outlet property="start" destination="3xq-5m-g2h" id="4Sc-Gp-jVQ"/>
+                        <outlet property="tip1" destination="b4a-CT-sjS" id="EiV-wI-7e8"/>
+                        <outlet property="tip2" destination="sbX-hs-rHp" id="3fH-Yt-RF5"/>
+                        <outletCollection property="alienImages" destination="S1D-hh-HOh" id="F6M-ar-6hh"/>
+                        <outletCollection property="alienImages" destination="Emo-Y4-utt" id="mTY-Rx-qmr"/>
+                        <outletCollection property="alienImages" destination="lul-Xq-f16" id="DcW-vZ-zGs"/>
+                        <outletCollection property="alienImages" destination="aQb-jL-Sej" id="O4a-6k-hB4"/>
+                        <outletCollection property="alienImages" destination="rEE-mi-ZEl" id="SD7-Ky-7nO"/>
+                        <outletCollection property="alienImages" destination="P7o-9W-wFV" id="tVb-ye-ahm"/>
+                        <outletCollection property="alienImages" destination="yov-vr-84m" id="8im-f1-HeC"/>
+                        <outletCollection property="alienImages" destination="hLA-mf-zme" id="4Kc-Xc-Jc5"/>
+                        <outletCollection property="alienBeamImages" destination="7oJ-72-VOq" id="ahk-KV-Cpb"/>
+                        <outletCollection property="alienBeamImages" destination="ShC-gF-TC2" id="i2n-QE-B6f"/>
+                        <outletCollection property="alienBeamImages" destination="G4e-3c-hbF" id="KBE-QF-VpL"/>
+                        <outletCollection property="alienBeamImages" destination="Umx-C5-LGp" id="BH0-wq-50i"/>
+                        <outletCollection property="alienBeamImages" destination="mkM-Ir-OiB" id="upj-cl-fNo"/>
+                        <outletCollection property="alienBeamImages" destination="XuU-wi-SMs" id="Ooc-Ms-Ugj"/>
+                        <outletCollection property="alienBeamImages" destination="j8Q-ey-oOp" id="5pB-Us-CpF"/>
+                        <outletCollection property="alienBeamImages" destination="EZb-gY-L8v" id="9CT-5X-PN3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="go5-K8-tXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="10"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5$shrimp_logo.png" width="80" height="55"/>
+        <image name="alienBeam.png" width="100" height="100"/>
+        <image name="alphaAlien.png" width="136" height="136"/>
+        <image name="gun.png" width="104" height="64"/>
+        <image name="gunBeam.png" width="100" height="200"/>
+        <image name="space.png" width="320" height="480"/>
+        <image name="stars.png" width="320" height="480"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

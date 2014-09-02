@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD9C0A1F19A5589A00CBE0EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9C0A1E19A5589A00CBE0EE /* Foundation.framework */; };
+		AD9C0A2119A5589A00CBE0EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9C0A2019A5589A00CBE0EE /* CoreGraphics.framework */; };
+		AD9C0A2319A5589A00CBE0EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9C0A2219A5589A00CBE0EE /* UIKit.framework */; };
+		AD9C0A2919A5589A00CBE0EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD9C0A2719A5589A00CBE0EE /* InfoPlist.strings */; };
+		AD9C0A2B19A5589A00CBE0EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9C0A2A19A5589A00CBE0EE /* main.m */; };
+		AD9C0A2F19A5589A00CBE0EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9C0A2E19A5589A00CBE0EE /* AppDelegate.m */; };
+		AD9C0A3219A5589A00CBE0EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9C0A3019A5589A00CBE0EE /* Main.storyboard */; };
+		AD9C0A3519A5589A00CBE0EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9C0A3419A5589A00CBE0EE /* ViewController.m */; };
+		AD9C0A3719A5589A00CBE0EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9C0A3619A5589A00CBE0EE /* Images.xcassets */; };
+		AD9C0A3E19A5589A00CBE0EE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9C0A3D19A5589A00CBE0EE /* XCTest.framework */; };
+		AD9C0A3F19A5589A00CBE0EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9C0A1E19A5589A00CBE0EE /* Foundation.framework */; };
+		AD9C0A4019A5589A00CBE0EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9C0A2219A5589A00CBE0EE /* UIKit.framework */; };
+		AD9C0A4819A5589A00CBE0EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD9C0A4619A5589A00CBE0EE /* InfoPlist.strings */; };
+		AD9C0A4A19A5589A00CBE0EE /* Alien_AttackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9C0A4919A5589A00CBE0EE /* Alien_AttackTests.m */; };
+		AD9C0A5719A558FA00CBE0EE /* space.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9C0A5319A558FA00CBE0EE /* space.png */; };
+		AD9C0A5919A558FA00CBE0EE /* gun.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9C0A5519A558FA00CBE0EE /* gun.png */; };
+		AD9C0A5D19A562A300CBE0EE /* MainLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9C0A5C19A562A300CBE0EE /* MainLogic.m */; };
+		AD9C0A5F19A643B900CBE0EE /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9C0A5E19A643B900CBE0EE /* stars.png */; };
+		ADA48FDE19A9281A00445403 /* alphaAlienHands.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA48FDD19A9281900445403 /* alphaAlienHands.png */; };
+		ADA48FE019AB6BED00445403 /* alienBeam.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA48FDF19AB6BED00445403 /* alienBeam.png */; };
+		ADA48FE219AB6BFC00445403 /* gunBeam.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA48FE119AB6BFC00445403 /* gunBeam.png */; };
+		ADA48FE419ABA22B00445403 /* 5$shrimp_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA48FE319ABA22B00445403 /* 5$shrimp_logo.png */; };
+		ADFF7BE319A65E5D0027FE79 /* alphaAlien.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFF7BE219A65E5D0027FE79 /* alphaAlien.png */; };
+		ADFF7BE519A6657B0027FE79 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFF7BE419A6657B0027FE79 /* icon.png */; };
+		ADFF7BE819A6AAB50027FE79 /* Aliens.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFF7BE719A6AAB50027FE79 /* Aliens.m */; };
+		ADFF7BED19A8D7670027FE79 /* alphaAlienEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = ADFF7BEC19A8D7660027FE79 /* alphaAlienEmpty.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD9C0A4119A5589A00CBE0EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD9C0A1319A5589900CBE0EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD9C0A1A19A5589A00CBE0EE;
+			remoteInfo = "Alien Attack";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD9C0A1B19A5589A00CBE0EE /* Alien Attack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alien Attack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9C0A1E19A5589A00CBE0EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD9C0A2019A5589A00CBE0EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AD9C0A2219A5589A00CBE0EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AD9C0A2619A5589A00CBE0EE /* Alien Attack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alien Attack-Info.plist"; sourceTree = "<group>"; };
+		AD9C0A2819A5589A00CBE0EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD9C0A2A19A5589A00CBE0EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD9C0A2C19A5589A00CBE0EE /* Alien Attack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alien Attack-Prefix.pch"; sourceTree = "<group>"; };
+		AD9C0A2D19A5589A00CBE0EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD9C0A2E19A5589A00CBE0EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD9C0A3119A5589A00CBE0EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD9C0A3319A5589A00CBE0EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD9C0A3419A5589A00CBE0EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD9C0A3619A5589A00CBE0EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD9C0A3C19A5589A00CBE0EE /* Alien AttackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alien AttackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9C0A3D19A5589A00CBE0EE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AD9C0A4519A5589A00CBE0EE /* Alien AttackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alien AttackTests-Info.plist"; sourceTree = "<group>"; };
+		AD9C0A4719A5589A00CBE0EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD9C0A4919A5589A00CBE0EE /* Alien_AttackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Alien_AttackTests.m; sourceTree = "<group>"; };
+		AD9C0A5319A558FA00CBE0EE /* space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space.png; sourceTree = "<group>"; };
+		AD9C0A5519A558FA00CBE0EE /* gun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gun.png; sourceTree = "<group>"; };
+		AD9C0A5B19A562A300CBE0EE /* MainLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLogic.h; sourceTree = "<group>"; };
+		AD9C0A5C19A562A300CBE0EE /* MainLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLogic.m; sourceTree = "<group>"; };
+		AD9C0A5E19A643B900CBE0EE /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
+		ADA48FDD19A9281900445403 /* alphaAlienHands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alphaAlienHands.png; sourceTree = "<group>"; };
+		ADA48FDF19AB6BED00445403 /* alienBeam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alienBeam.png; sourceTree = "<group>"; };
+		ADA48FE119AB6BFC00445403 /* gunBeam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gunBeam.png; sourceTree = "<group>"; };
+		ADA48FE319ABA22B00445403 /* 5$shrimp_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5$shrimp_logo.png; sourceTree = "<group>"; };
+		ADFF7BE219A65E5D0027FE79 /* alphaAlien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alphaAlien.png; sourceTree = "<group>"; };
+		ADFF7BE419A6657B0027FE79 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		ADFF7BE619A6AAB50027FE79 /* Aliens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aliens.h; sourceTree = "<group>"; };
+		ADFF7BE719A6AAB50027FE79 /* Aliens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aliens.m; sourceTree = "<group>"; };
+		ADFF7BEC19A8D7660027FE79 /* alphaAlienEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alphaAlienEmpty.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD9C0A1819A5589A00CBE0EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9C0A2119A5589A00CBE0EE /* CoreGraphics.framework in Frameworks */,
+				AD9C0A2319A5589A00CBE0EE /* UIKit.framework in Frameworks */,
+				AD9C0A1F19A5589A00CBE0EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9C0A3919A5589A00CBE0EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9C0A3E19A5589A00CBE0EE /* XCTest.framework in Frameworks */,
+				AD9C0A4019A5589A00CBE0EE /* UIKit.framework in Frameworks */,
+				AD9C0A3F19A5589A00CBE0EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD9C0A1219A5589900CBE0EE = {
+			isa = PBXGroup;
+			children = (
+				AD9C0A2419A5589A00CBE0EE /* Alien Attack */,
+				AD9C0A4319A5589A00CBE0EE /* Alien AttackTests */,
+				AD9C0A1D19A5589A00CBE0EE /* Frameworks */,
+				AD9C0A1C19A5589A00CBE0EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD9C0A1C19A5589A00CBE0EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD9C0A1B19A5589A00CBE0EE /* Alien Attack.app */,
+				AD9C0A3C19A5589A00CBE0EE /* Alien AttackTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD9C0A1D19A5589A00CBE0EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD9C0A1E19A5589A00CBE0EE /* Foundation.framework */,
+				AD9C0A2019A5589A00CBE0EE /* CoreGraphics.framework */,
+				AD9C0A2219A5589A00CBE0EE /* UIKit.framework */,
+				AD9C0A3D19A5589A00CBE0EE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD9C0A2419A5589A00CBE0EE /* Alien Attack */ = {
+			isa = PBXGroup;
+			children = (
+				AD9C0A2D19A5589A00CBE0EE /* AppDelegate.h */,
+				AD9C0A3619A5589A00CBE0EE /* Images.xcassets */,
+				AD9C0A2E19A5589A00CBE0EE /* AppDelegate.m */,
+				AD9C0A3019A5589A00CBE0EE /* Main.storyboard */,
+				AD9C0A3319A5589A00CBE0EE /* ViewController.h */,
+				AD9C0A3419A5589A00CBE0EE /* ViewController.m */,
+				AD9C0A2519A5589A00CBE0EE /* Supporting Files */,
+				AD9C0A5B19A562A300CBE0EE /* MainLogic.h */,
+				AD9C0A5C19A562A300CBE0EE /* MainLogic.m */,
+				ADFF7BE619A6AAB50027FE79 /* Aliens.h */,
+				ADFF7BE719A6AAB50027FE79 /* Aliens.m */,
+			);
+			path = "Alien Attack";
+			sourceTree = "<group>";
+		};
+		AD9C0A2519A5589A00CBE0EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD9C0A2619A5589A00CBE0EE /* Alien Attack-Info.plist */,
+				ADA48FE319ABA22B00445403 /* 5$shrimp_logo.png */,
+				AD9C0A5319A558FA00CBE0EE /* space.png */,
+				AD9C0A5E19A643B900CBE0EE /* stars.png */,
+				ADFF7BE219A65E5D0027FE79 /* alphaAlien.png */,
+				ADFF7BEC19A8D7660027FE79 /* alphaAlienEmpty.png */,
+				ADA48FDD19A9281900445403 /* alphaAlienHands.png */,
+				AD9C0A5519A558FA00CBE0EE /* gun.png */,
+				ADA48FE119AB6BFC00445403 /* gunBeam.png */,
+				ADFF7BE419A6657B0027FE79 /* icon.png */,
+				ADA48FDF19AB6BED00445403 /* alienBeam.png */,
+				AD9C0A2719A5589A00CBE0EE /* InfoPlist.strings */,
+				AD9C0A2A19A5589A00CBE0EE /* main.m */,
+				AD9C0A2C19A5589A00CBE0EE /* Alien Attack-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD9C0A4319A5589A00CBE0EE /* Alien AttackTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD9C0A4919A5589A00CBE0EE /* Alien_AttackTests.m */,
+				AD9C0A4419A5589A00CBE0EE /* Supporting Files */,
+			);
+			path = "Alien AttackTests";
+			sourceTree = "<group>";
+		};
+		AD9C0A4419A5589A00CBE0EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD9C0A4519A5589A00CBE0EE /* Alien AttackTests-Info.plist */,
+				AD9C0A4619A5589A00CBE0EE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD9C0A1A19A5589A00CBE0EE /* Alien Attack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD9C0A4D19A5589B00CBE0EE /* Build configuration list for PBXNativeTarget "Alien Attack" */;
+			buildPhases = (
+				AD9C0A1719A5589A00CBE0EE /* Sources */,
+				AD9C0A1819A5589A00CBE0EE /* Frameworks */,
+				AD9C0A1919A5589A00CBE0EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alien Attack";
+			productName = "Alien Attack";
+			productReference = AD9C0A1B19A5589A00CBE0EE /* Alien Attack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD9C0A3B19A5589A00CBE0EE /* Alien AttackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD9C0A5019A5589B00CBE0EE /* Build configuration list for PBXNativeTarget "Alien AttackTests" */;
+			buildPhases = (
+				AD9C0A3819A5589A00CBE0EE /* Sources */,
+				AD9C0A3919A5589A00CBE0EE /* Frameworks */,
+				AD9C0A3A19A5589A00CBE0EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD9C0A4219A5589A00CBE0EE /* PBXTargetDependency */,
+			);
+			name = "Alien AttackTests";
+			productName = "Alien AttackTests";
+			productReference = AD9C0A3C19A5589A00CBE0EE /* Alien AttackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD9C0A1319A5589900CBE0EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "S&L";
+				TargetAttributes = {
+					AD9C0A3B19A5589A00CBE0EE = {
+						TestTargetID = AD9C0A1A19A5589A00CBE0EE;
+					};
+				};
+			};
+			buildConfigurationList = AD9C0A1619A5589900CBE0EE /* Build configuration list for PBXProject "Alien Attack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD9C0A1219A5589900CBE0EE;
+			productRefGroup = AD9C0A1C19A5589A00CBE0EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD9C0A1A19A5589A00CBE0EE /* Alien Attack */,
+				AD9C0A3B19A5589A00CBE0EE /* Alien AttackTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD9C0A1919A5589A00CBE0EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9C0A5919A558FA00CBE0EE /* gun.png in Resources */,
+				AD9C0A5F19A643B900CBE0EE /* stars.png in Resources */,
+				ADA48FE419ABA22B00445403 /* 5$shrimp_logo.png in Resources */,
+				AD9C0A5719A558FA00CBE0EE /* space.png in Resources */,
+				ADA48FDE19A9281A00445403 /* alphaAlienHands.png in Resources */,
+				AD9C0A3719A5589A00CBE0EE /* Images.xcassets in Resources */,
+				AD9C0A2919A5589A00CBE0EE /* InfoPlist.strings in Resources */,
+				ADFF7BE519A6657B0027FE79 /* icon.png in Resources */,
+				ADFF7BE319A65E5D0027FE79 /* alphaAlien.png in Resources */,
+				ADFF7BED19A8D7670027FE79 /* alphaAlienEmpty.png in Resources */,
+				AD9C0A3219A5589A00CBE0EE /* Main.storyboard in Resources */,
+				ADA48FE019AB6BED00445403 /* alienBeam.png in Resources */,
+				ADA48FE219AB6BFC00445403 /* gunBeam.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9C0A3A19A5589A00CBE0EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9C0A4819A5589A00CBE0EE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD9C0A1719A5589A00CBE0EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9C0A3519A5589A00CBE0EE /* ViewController.m in Sources */,
+				ADFF7BE819A6AAB50027FE79 /* Aliens.m in Sources */,
+				AD9C0A5D19A562A300CBE0EE /* MainLogic.m in Sources */,
+				AD9C0A2F19A5589A00CBE0EE /* AppDelegate.m in Sources */,
+				AD9C0A2B19A5589A00CBE0EE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9C0A3819A5589A00CBE0EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9C0A4A19A5589A00CBE0EE /* Alien_AttackTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD9C0A4219A5589A00CBE0EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD9C0A1A19A5589A00CBE0EE /* Alien Attack */;
+			targetProxy = AD9C0A4119A5589A00CBE0EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD9C0A2719A5589A00CBE0EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD9C0A2819A5589A00CBE0EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AD9C0A3019A5589A00CBE0EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD9C0A3119A5589A00CBE0EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD9C0A4619A5589A00CBE0EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD9C0A4719A5589A00CBE0EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD9C0A4B19A5589B00CBE0EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD9C0A4C19A5589B00CBE0EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD9C0A4E19A5589B00CBE0EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alien Attack/Alien Attack-Prefix.pch";
+				INFOPLIST_FILE = "Alien Attack/Alien Attack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AD9C0A4F19A5589B00CBE0EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alien Attack/Alien Attack-Prefix.pch";
+				INFOPLIST_FILE = "Alien Attack/Alien Attack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AD9C0A5119A5589B00CBE0EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Alien Attack.app/Alien Attack";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alien Attack/Alien Attack-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Alien AttackTests/Alien AttackTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AD9C0A5219A5589B00CBE0EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Alien Attack.app/Alien Attack";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Alien Attack/Alien Attack-Prefix.pch";
+				INFOPLIST_FILE = "Alien AttackTests/Alien AttackTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD9C0A1619A5589900CBE0EE /* Build configuration list for PBXProject "Alien Attack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9C0A4B19A5589B00CBE0EE /* Debug */,
+				AD9C0A4C19A5589B00CBE0EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD9C0A4D19A5589B00CBE0EE /* Build configuration list for PBXNativeTarget "Alien Attack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9C0A4E19A5589B00CBE0EE /* Debug */,
+				AD9C0A4F19A5589B00CBE0EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD9C0A5019A5589B00CBE0EE /* Build configuration list for PBXNativeTarget "Alien AttackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9C0A5119A5589B00CBE0EE /* Debug */,
+				AD9C0A5219A5589B00CBE0EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD9C0A1319A5589900CBE0EE /* Project object */;
+}
